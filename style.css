@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@400;700&family=Roboto:wght@400;700;900&family=Sora:wght@100..800&display=swap");
+
+:root {
+  --primary: #094b65;
+  --secondary: #131e1e;
+  --gray: #b5b8bb;
+  --white: #fff;
+  --black: #000;
+  --auxiliar: #e6d6fc;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Sora", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 10rem;
+  z-index: 1000;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .logo {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+#header ul li {
+  list-style: none;
+}
+
+#header ul li a {
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  color: var(--primary);
+  border-radius: 2rem;
+  font-size: 1.6rem;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+#scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#scene #text {
+  position: absolute;
+  transform: translateY(100%);
+  color: var(--primary);
+  font-size: 10vw;
+  white-space: no-wrap;
+  text-align: center;
+}
+
+#scene img {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  padding: 10rem;
+  background: var(--secondary);
+}
+
+.content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.content p {
+  font-size: 1.6rem;
+  color: var(--white);
+}
